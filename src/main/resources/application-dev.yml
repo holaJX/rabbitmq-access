@@ -1,0 +1,69 @@
+# 基础配置
+server:
+   port:  8088
+# 数据源配置
+spring:
+  datasource:
+    url: jdbc:sqlserver://***:1314;databaseName=lpwater
+    username: ***
+    password: ***
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initial-size: 1
+    max-active: 20
+    min-idle: 1
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  rabbitmq:
+    host: *****
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    publisher-confirms: true  #  消息发送到交换机确认机制,是否确认回调
+    publisher-returns: true
+## Mybatis 配置
+#mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapping/*.xml
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapping/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.zhsw.rabbitmqaccess.entity
+  typeEnumsPackage: com.zhsw.rabbitmqaccess.entity
+  global-config:
+    # 数据库相关配置
+    db-config:
+      #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID",ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
+      id-type: input
+      #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
+      field-strategy: not_empty
+      #驼峰下划线转换
+      column-underline: false
+      #数据库大写下划线转换
+      capital-mode: false
+      #逻辑删除配置
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      db-type: h2
+    #刷新mapper 调试神器
+    refresh: true
+  # 原生配置
+  configuration:
+    map-underscore-to-camel-case: false
+    cache-enabled: false
+
+# 日志级别
+logging:
+    config: classpath:logback-spring.xml
+#新天接口地址
+xinTianSystem:
+     userName: ***
+     password: ***
+     url: http://***/SunWaterSavingAppService.asmx
+#当前监听的队列名称（需要和生产者队列名保持一致）
+rabbitmqQueueName:
+     mis: mis-equipment-lp
+     integration: integration-tree-lp
+
+

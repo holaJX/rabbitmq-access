@@ -1,0 +1,105 @@
+2018-11-09 10:28:54.885 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Starting RabbitmqAccessApplication on USER-20180203FW with PID 7628 (E:\rabbitmq\target\classes started by Administrator in E:\rabbitmq)
+2018-11-09 10:28:54.891 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: The following profiles are active: dev
+2018-11-09 10:28:55.944 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$62332455] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 10:28:56.259 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 10:28:56.580 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 10:28:56.682 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 10:28:57.157 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 10:28:57.465 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#35fe2125:0/SimpleConnection@68809cc7 [delegate=amqp://guest@172.18.40.192:5672/, localPort= 4262]
+2018-11-09 10:28:58.885 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Started RabbitmqAccessApplication in 4.719 seconds (JVM running for 8.568)
+2018-11-09 10:33:31.184 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Starting RabbitmqAccessApplication on USER-20180203FW with PID 10616 (E:\rabbitmq\target\classes started by Administrator in E:\rabbitmq)
+2018-11-09 10:33:31.186 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: The following profiles are active: dev
+2018-11-09 10:33:31.683 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$14a0c991] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 10:33:31.905 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 10:33:32.044 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 10:33:32.092 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 10:33:32.472 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 10:33:32.769 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#732c9b5c:0/SimpleConnection@1cfc2538 [delegate=amqp://guest@172.18.40.192:5672/, localPort= 4730]
+2018-11-09 10:33:34.119 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Started RabbitmqAccessApplication in 3.282 seconds (JVM running for 6.855)
+2018-11-09 10:38:02.824 [31mWARN [0;39m [442] [SimpleAsyncTaskExecutor-1] [36morg.apache.axis2.deployment.AxisConfigBuilder[0;39m: Unable to instantiate deployer org.apache.axis2.deployment.ServiceDeployer; see debug logs for more details
+2018-11-09 10:38:04.224 [34mINFO [0;39m [58] [SimpleAsyncTaskExecutor-1] [36mcom.zhsw.rabbitmqaccess.service.impl.MeterServiceImp[0;39m: 【水表存档】新天接口调用成功:{"Msg":"成功","Result":1,"Data":null}
+2018-11-09 11:14:02.102 [1;31mERROR[0;39m [56] [SimpleAsyncTaskExecutor-1] [36mcom.zhsw.rabbitmqaccess.service.ConsumerTreeService[0;39m: 
+### Error updating database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+### The error may involve com.zhsw.rabbitmqaccess.dao.CountyDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO county  ( county_code, county_name, tilth_area,  location_x, location_y )  VALUES  ( ?, ?, ?,  ?, ? )
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+; bad SQL grammar []; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+2018-11-09 11:20:53.342 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Starting RabbitmqAccessApplication on USER-20180203FW with PID 10508 (E:\rabbitmq\target\classes started by Administrator in E:\rabbitmq)
+2018-11-09 11:20:53.344 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: The following profiles are active: dev
+2018-11-09 11:20:53.805 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cb921cc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 11:20:53.969 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 11:20:54.084 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 11:20:54.137 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 11:20:54.362 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 11:20:54.649 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#53ab0286:0/SimpleConnection@37a64f9d [delegate=amqp://guest@172.18.40.192:5672/, localPort= 10080]
+2018-11-09 11:20:55.907 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Started RabbitmqAccessApplication in 2.891 seconds (JVM running for 5.831)
+2018-11-09 11:21:21.900 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Starting RabbitmqAccessApplication on USER-20180203FW with PID 8560 (E:\rabbitmq\target\classes started by Administrator in E:\rabbitmq)
+2018-11-09 11:21:21.903 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: The following profiles are active: dev
+2018-11-09 11:21:22.400 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c60a4eaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 11:21:22.595 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 11:21:22.727 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 11:21:22.776 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 11:21:23.032 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 11:21:23.328 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#5432c277:0/SimpleConnection@4fc5563d [delegate=amqp://guest@172.18.40.192:5672/, localPort= 10144]
+2018-11-09 11:21:24.654 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplication[0;39m: Started RabbitmqAccessApplication in 3.165 seconds (JVM running for 6.429)
+2018-11-09 11:35:17.613 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: Starting RabbitmqAccessApplicationTests on USER-20180203FW with PID 10072 (started by Administrator in E:\rabbitmq)
+2018-11-09 11:35:17.615 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: The following profiles are active: dev
+2018-11-09 11:35:18.303 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$63791124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 11:35:21.190 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 11:35:21.737 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 11:35:21.846 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 11:35:22.409 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 11:35:22.778 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#2a331b46:0/SimpleConnection@54af3cb9 [delegate=amqp://guest@172.18.40.192:5672/, localPort= 11717]
+2018-11-09 11:35:24.147 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: Started RabbitmqAccessApplicationTests in 7.0 seconds (JVM running for 7.779)
+2018-11-09 11:36:39.302 [1;31mERROR[0;39m [56] [SimpleAsyncTaskExecutor-1] [36mcom.zhsw.rabbitmqaccess.service.ConsumerTreeService[0;39m: 
+### Error updating database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+### The error may involve com.zhsw.rabbitmqaccess.dao.CountyDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO county  ( county_code, county_name, tilth_area,  location_x, location_y )  VALUES  ( ?, ?, ?,  ?, ? )
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+; bad SQL grammar []; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+2018-11-09 11:37:24.072 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: Starting RabbitmqAccessApplicationTests on USER-20180203FW with PID 11420 (started by Administrator in E:\rabbitmq)
+2018-11-09 11:37:24.074 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: The following profiles are active: dev
+2018-11-09 11:37:24.634 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1f6bebd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 11:37:27.405 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 11:37:27.605 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 11:37:27.675 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 11:37:28.077 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 11:37:28.395 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#6759f091:0/SimpleConnection@6240651f [delegate=amqp://guest@172.18.40.192:5672/, localPort= 11947]
+2018-11-09 11:37:29.481 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: Started RabbitmqAccessApplicationTests in 5.755 seconds (JVM running for 6.473)
+2018-11-09 11:37:32.701 [34mINFO [0;39m [565] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Waiting for workers to finish.
+2018-11-09 11:37:33.213 [34mINFO [0;39m [568] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Successfully waited for workers to finish.
+2018-11-09 11:37:33.262 [34mINFO [0;39m [565] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Waiting for workers to finish.
+2018-11-09 11:37:33.558 [34mINFO [0;39m [568] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Successfully waited for workers to finish.
+2018-11-09 11:37:33.565 [34mINFO [0;39m [1153] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Shutdown ignored - container is not active already
+2018-11-09 11:37:33.566 [34mINFO [0;39m [1153] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Shutdown ignored - container is not active already
+2018-11-09 11:37:33.574 [34mINFO [0;39m [1823] [Thread-2] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} closed
+2018-11-09 11:38:46.524 [1;31mERROR[0;39m [56] [SimpleAsyncTaskExecutor-1] [36mcom.zhsw.rabbitmqaccess.service.ConsumerTreeService[0;39m: 
+### Error updating database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+### The error may involve com.zhsw.rabbitmqaccess.dao.CountyDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO county  ( county_code, county_name, tilth_area,  location_x, location_y )  VALUES  ( ?, ?, ?,  ?, ? )
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+; bad SQL grammar []; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 列名 'county_code' 无效。
+2018-11-09 11:38:46.527 [31mWARN [0;39m [115] [AMQP Connection 172.18.40.192:5672] [36mcom.rabbitmq.client.impl.ForgivingExceptionHandler[0;39m: An unexpected connection driver error occured (Exception message: Connection reset)
+2018-11-09 11:38:46.551 [1;31mERROR[0;39m [1424] [AMQP Connection 172.18.40.192:5672] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Channel shutdown: connection error
+2018-11-09 11:38:46.552 [34mINFO [0;39m [1243] [SimpleAsyncTaskExecutor-1] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Restarting Consumer@18d003cd: tags=[[amq.ctag-k0ZDpFoMWtYuQZ3CKRCD3A]], channel=Cached Rabbit Channel: PublisherCallbackChannelImpl: AMQChannel(amqp://guest@172.18.40.192:5672/,2), conn: Proxy@7be2f29a Shared Rabbit Connection: SimpleConnection@4fc5563d [delegate=amqp://guest@172.18.40.192:5672/, localPort= 10144], acknowledgeMode=AUTO local queue size=0
+2018-11-09 11:38:46.553 [1;31mERROR[0;39m [1424] [AMQP Connection 172.18.40.192:5672] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Channel shutdown: connection error
+2018-11-09 11:38:46.556 [34mINFO [0;39m [455] [SimpleAsyncTaskExecutor-2] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 11:40:48.909 [34mINFO [0;39m [50] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: Starting RabbitmqAccessApplicationTests on USER-20180203FW with PID 2036 (started by Administrator in E:\rabbitmq)
+2018-11-09 11:40:48.910 [34mINFO [0;39m [679] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: The following profiles are active: dev
+2018-11-09 11:40:49.436 [34mINFO [0;39m [330] [main] [36mo.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m: Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1b14b7b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-09 11:40:51.966 [34mINFO [0;39m [56] [main] [36mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m: Init DruidDataSource
+2018-11-09 11:40:52.183 [34mINFO [0;39m [928] [main] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} inited
+2018-11-09 11:40:52.263 [31mWARN [0;39m [275] [main] [36mcom.baomidou.mybatisplus.core.toolkit.TableInfoHelper[0;39m: Warn: Could not find @TableId in Class: com.zhsw.rabbitmqaccess.entity.Meter.
+2018-11-09 11:40:52.706 [34mINFO [0;39m [455] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Attempting to connect to: [172.18.40.192]
+2018-11-09 11:40:52.964 [34mINFO [0;39m [491] [main] [36morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m: Created new connection: connectionFactory#4aeaadc1:0/SimpleConnection@5ac6c4f2 [delegate=amqp://guest@172.18.40.192:5672/, localPort= 12562]
+2018-11-09 11:40:54.047 [34mINFO [0;39m [59] [main] [36mcom.zhsw.rabbitmqaccess.RabbitmqAccessApplicationTests[0;39m: Started RabbitmqAccessApplicationTests in 5.449 seconds (JVM running for 6.137)
+2018-11-09 11:40:54.249 [34mINFO [0;39m [565] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Waiting for workers to finish.
+2018-11-09 11:40:54.786 [34mINFO [0;39m [568] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Successfully waited for workers to finish.
+2018-11-09 11:40:54.853 [34mINFO [0;39m [565] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Waiting for workers to finish.
+2018-11-09 11:40:55.041 [34mINFO [0;39m [568] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Successfully waited for workers to finish.
+2018-11-09 11:40:55.050 [34mINFO [0;39m [1153] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Shutdown ignored - container is not active already
+2018-11-09 11:40:55.051 [34mINFO [0;39m [1153] [Thread-2] [36morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m: Shutdown ignored - container is not active already
+2018-11-09 11:40:55.056 [34mINFO [0;39m [1823] [Thread-2] [36mcom.alibaba.druid.pool.DruidDataSource[0;39m: {dataSource-1} closed
